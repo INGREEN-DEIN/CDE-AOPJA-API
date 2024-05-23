@@ -12,6 +12,7 @@ export class AwilixContainerAdapter {
       injectionMode: InjectionMode.CLASSIC,
       strict: true,
     });
+
     return new AwilixContainerAdapter(container);
   }
 

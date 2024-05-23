@@ -1,7 +1,6 @@
 import express, { Router } from 'express';
 import { Server as HttpServer } from 'http';
 import { MiddlewareManager, StaticFileManager } from './configuration';
-
 interface ServerOptions {
   port: number;
   routes: Router;

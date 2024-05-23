@@ -14,3 +14,25 @@ async function main() {
   });
   server.start();
 }
+
+// import express from 'express';
+
+// (() => {
+//   main();
+// })();
+
+// function main() {
+//   const app = express();
+
+//   const container = Container.setup();
+
+//   app.use(express.json());
+
+//   const controller = container.resolve<WelcomeController>('welcomeController');
+
+//   app.get('/api/v1/hi/igor', controller.greet);
+
+//   app.listen(3000, () => {
+//     console.log(`App running on port ${3000}`);
+//   });
+// }

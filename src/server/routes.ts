@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { WelcomeRoutes } from '../presentation/welcome/welcome.routes';
+import { WelcomeRoutes } from '../modules/welcome/presentation';
 
 export class AppRouter {
   public static get routes(): Router {
