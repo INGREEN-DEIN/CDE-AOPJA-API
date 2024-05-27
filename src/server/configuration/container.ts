@@ -1,4 +1,4 @@
-import { AwilixContainerAdapter } from '../../adapter';
+import { AwilixContainerAdapter } from '../../adapters';
 import { WelcomeDatasource, WelcomeRepository, WelcomeService } from '../../modules/welcome/infrastructure';
 import { WelcomeController } from '../../modules/welcome/presentation/controllers/welcome.controller';
 
