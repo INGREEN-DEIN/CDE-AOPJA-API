@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { WelcomeService } from '../../infrastructure/services/welcome.service';
+import { WelcomeService } from '../../application/services/welcome.service';
 import { CreateWelcomeDto } from '../../domain';
 
 export class WelcomeController {
