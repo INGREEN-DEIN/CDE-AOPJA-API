@@ -1,9 +1,9 @@
-import { CreateWelcomeDto, IWelcomeDatasource, IWelcomeRepository } from '../../domain';
+import { CreateWelcomeDto, IWelcomeDatasource, IWelcomeRepository, WelcomeEntity } from '../../domain';
 
 export class WelcomeRepository implements IWelcomeRepository {
   constructor(private welcomeDatasource: IWelcomeDatasource) {}
 
-  public greet(createWelcomeDto: CreateWelcomeDto) {
+  public greet(createWelcomeDto: CreateWelcomeDto): Promise<WelcomeEntity> {
     return this.welcomeDatasource.greet(createWelcomeDto);
   }
 }
